@@ -25,6 +25,7 @@
 
 import UIKit
 
+/*
 @objc(ColorPalette)
 public protocol ColorPalette {
   /// Material color code: 50
@@ -64,7 +65,7 @@ public protocol ColorPalette {
   @objc
   optional static var accent4: UIColor { get }
 }
-/*
+
 open class Color: UIColor {
   // dark text
   open class darkText {
