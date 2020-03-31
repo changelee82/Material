@@ -192,10 +192,10 @@ open class BaseIconLayerButton: Button {
   }
   
   /// Pulse color for selected state.
-  open var selectedPulseColor = Color.white
+  open var selectedPulseColor = MDColor.white
   
   /// Pulse color for normal state.
-  open var normalPulseColor = Color.white
+  open var normalPulseColor = MDColor.white
 }
 
 private extension BaseIconLayerButton {
@@ -207,9 +207,9 @@ private extension BaseIconLayerButton {
 // MARK: - BaseIconLayer
 
 internal class BaseIconLayer: CALayer {
-  var selectedColor = Color.blue.base
-  var normalColor = Color.lightGray
-  var disabledColor = Color.gray
+  var selectedColor = MDColor.blue.base
+  var normalColor = MDColor.lightGray
+  var disabledColor = MDColor.gray
   
   
   func prepareForFirstAnimation() {}

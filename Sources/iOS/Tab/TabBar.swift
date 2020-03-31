@@ -65,9 +65,9 @@ fileprivate extension TabItem {
   
   /// Prepares the tabsItems colors.
   func prepareColors() {
-    colorForState[.normal] = Color.grey.base
-    colorForState[.selected] = Color.blue.base
-    colorForState[.highlighted] = Color.blue.base
+    colorForState[.normal] = MDColor.grey.base
+    colorForState[.selected] = MDColor.blue.base
+    colorForState[.highlighted] = MDColor.blue.base
   }
 }
 
@@ -404,7 +404,7 @@ fileprivate extension TabBar {
   
   /// Prepares the divider.
   func prepareDivider() {
-    dividerColor = Color.grey.lighten2
+    dividerColor = MDColor.grey.lighten2
     dividerAlignment = .top
   }
   
@@ -424,7 +424,7 @@ fileprivate extension TabBar {
   
   /// Prepares the line colors.
   func prepareLineColor() {
-    lineColorForState[.selected] = Color.blue.base
+    lineColorForState[.selected] = MDColor.blue.base
   }
   
   /**

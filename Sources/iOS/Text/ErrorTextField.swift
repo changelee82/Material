@@ -45,7 +45,7 @@ open class ErrorTextField: TextField {
   
   /// Error text color
   @IBInspectable
-  open var errorColor = Color.red.base {
+  open var errorColor = MDColor.red.base {
     didSet {
       errorLabel.textColor = errorColor
     }

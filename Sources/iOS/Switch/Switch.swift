@@ -93,7 +93,7 @@ open class Switch: UIControl, Themeable {
   
   /// Button on color.
   @IBInspectable
-  open var buttonOnColor = Color.clear {
+  open var buttonOnColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -101,7 +101,7 @@ open class Switch: UIControl, Themeable {
   
   /// Button off color.
   @IBInspectable
-  open var buttonOffColor = Color.clear {
+  open var buttonOffColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -125,7 +125,7 @@ open class Switch: UIControl, Themeable {
   
   /// Track on color.
   @IBInspectable
-  open var trackOnColor = Color.clear {
+  open var trackOnColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -133,7 +133,7 @@ open class Switch: UIControl, Themeable {
   
   /// Track off color.
   @IBInspectable
-  open var trackOffColor = Color.clear {
+  open var trackOffColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -141,7 +141,7 @@ open class Switch: UIControl, Themeable {
   
   /// Button on disabled color.
   @IBInspectable
-  open var buttonOnDisabledColor = Color.clear {
+  open var buttonOnDisabledColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -149,7 +149,7 @@ open class Switch: UIControl, Themeable {
   
   /// Track on disabled color.
   @IBInspectable
-  open var trackOnDisabledColor = Color.clear {
+  open var trackOnDisabledColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -157,7 +157,7 @@ open class Switch: UIControl, Themeable {
   
   /// Button off disabled color.
   @IBInspectable
-  open var buttonOffDisabledColor = Color.clear {
+  open var buttonOffDisabledColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }
@@ -165,7 +165,7 @@ open class Switch: UIControl, Themeable {
   
   /// Track off disabled color.
   @IBInspectable
-  open var trackOffDisabledColor = Color.clear {
+  open var trackOffDisabledColor = MDColor.clear {
     didSet {
       styleForState(state: switchState)
     }

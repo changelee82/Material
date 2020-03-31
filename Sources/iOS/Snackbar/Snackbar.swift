@@ -91,7 +91,7 @@ open class Snackbar: Bar {
     interimSpacePreset = .interimSpace8
     contentEdgeInsets.left = interimSpace
     contentEdgeInsets.right = interimSpace
-    backgroundColor = Color.grey.darken3
+    backgroundColor = MDColor.grey.darken3
     clipsToBounds = false
     prepareTextLabel()
   }

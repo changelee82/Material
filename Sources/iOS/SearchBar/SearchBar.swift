@@ -111,7 +111,7 @@ open class SearchBar: Bar {
   
   /// Placeholder text
   @IBInspectable
-  open var placeholderColor = Color.darkText.others {
+  open var placeholderColor = MDColor.darkText.others {
     didSet {
       if let v = placeholder {
         textField.attributedPlaceholder = NSAttributedString(string: v, attributes: [.foregroundColor: placeholderColor])
@@ -209,11 +209,11 @@ fileprivate extension SearchBar {
   func prepareTextField() {
     textField.contentScaleFactor = Screen.scale
     textField.font = Theme.font.regular(with: 17)
-    textField.backgroundColor = Color.clear
+    textField.backgroundColor = MDColor.clear
     textField.clearButtonMode = .whileEditing
     textField.addTarget(self, action: #selector(handleEditingChanged(textField:)), for: .editingChanged)
     tintColor = placeholderColor
-    textColor = Color.darkText.primary
+    textColor = MDColor.darkText.primary
     placeholder = "Search"
     contentView.addSubview(textField)
   }

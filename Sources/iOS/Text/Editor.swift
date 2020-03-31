@@ -63,7 +63,7 @@ open class Editor: View, Themeable {
   
   /// Placeholder normal text color.
   @IBInspectable
-  open var placeholderNormalColor = Color.darkText.others {
+  open var placeholderNormalColor = MDColor.darkText.others {
     didSet {
       updatePlaceholderLabelColor()
     }
@@ -71,7 +71,7 @@ open class Editor: View, Themeable {
   
   /// Placeholder active text color.
   @IBInspectable
-  open var placeholderActiveColor = Color.blue.base {
+  open var placeholderActiveColor = MDColor.blue.base {
     didSet {
       updatePlaceholderLabelColor()
     }
@@ -111,7 +111,7 @@ open class Editor: View, Themeable {
   
   /// Divider normal color.
   @IBInspectable
-  open var dividerNormalColor = Color.grey.lighten2 {
+  open var dividerNormalColor = MDColor.grey.lighten2 {
     didSet {
       updateDividerColor()
     }
@@ -119,7 +119,7 @@ open class Editor: View, Themeable {
   
   /// Divider active color.
   @IBInspectable
-  open var dividerActiveColor = Color.blue.base {
+  open var dividerActiveColor = MDColor.blue.base {
     didSet {
       updateDividerColor()
     }
@@ -143,7 +143,7 @@ open class Editor: View, Themeable {
   
   /// The detailLabel text color.
   @IBInspectable
-  open var detailColor = Color.darkText.others {
+  open var detailColor = MDColor.darkText.others {
     didSet {
       updateDetailLabelColor()
     }
@@ -248,7 +248,7 @@ private extension Editor {
   func prepareDetailLabel() {
     detailLabel.font = Theme.font.regular(with: 12)
     detailLabel.numberOfLines = 0
-    detailColor = Color.darkText.others
+    detailColor = MDColor.darkText.others
     addSubview(detailLabel)
   }
   

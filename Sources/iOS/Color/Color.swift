@@ -25,7 +25,7 @@
 
 import UIKit
 
-/*
+
 @objc(ColorPalette)
 public protocol ColorPalette {
   /// Material color code: 50
@@ -66,21 +66,21 @@ public protocol ColorPalette {
   optional static var accent4: UIColor { get }
 }
 
-open class Color: UIColor {
+open class MDColor: UIColor {
   // dark text
   open class darkText {
-    public static let primary = Color.black.withAlphaComponent(0.87)
-    public static let secondary = Color.black.withAlphaComponent(0.54)
-    public static let others = Color.black.withAlphaComponent(0.38)
-    public static let dividers = Color.black.withAlphaComponent(0.12)
+    public static let primary = MDColor.black.withAlphaComponent(0.87)
+    public static let secondary = MDColor.black.withAlphaComponent(0.54)
+    public static let others = MDColor.black.withAlphaComponent(0.38)
+    public static let dividers = MDColor.black.withAlphaComponent(0.12)
   }
   
   // light text
   open class lightText {
-    public static let primary = Color.white
-    public static let secondary = Color.white.withAlphaComponent(0.7)
-    public static let others = Color.white.withAlphaComponent(0.5)
-    public static let dividers = Color.white.withAlphaComponent(0.12)
+    public static let primary = MDColor.white
+    public static let secondary = MDColor.white.withAlphaComponent(0.7)
+    public static let others = MDColor.white.withAlphaComponent(0.5)
+    public static let dividers = MDColor.white.withAlphaComponent(0.12)
   }
   
   // red
@@ -414,4 +414,4 @@ open class Color: UIColor {
     public static let darken3 = UIColor(red: 55/255, green: 71/255, blue: 79/255, alpha: 1)
     public static let darken4 = UIColor(red: 38/255, green: 50/255, blue: 56/255, alpha: 1)
   }
-}*/
+}

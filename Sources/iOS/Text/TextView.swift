@@ -134,7 +134,7 @@ open class TextView: UITextView, Themeable {
   
   /// Placeholder normal text
   @IBInspectable
-  open var placeholderColor = Color.darkText.others {
+  open var placeholderColor = MDColor.darkText.others {
     didSet {
       updatePlaceholderLabelColor()
     }
@@ -279,7 +279,7 @@ open class TextView: UITextView, Themeable {
     textContainerInset = .zero
     backgroundColor = nil
     font = Theme.font.regular(with: 16)
-    textColor = Color.darkText.primary
+    textColor = MDColor.darkText.primary
     
     prepareNotificationHandlers()
     prepareRegularExpression()
@@ -381,7 +381,7 @@ fileprivate extension TextView {
   
   /// prepares the placeholderLabel property.
   func preparePlaceholderLabel() {
-    placeholderLabel.textColor = Color.darkText.others
+    placeholderLabel.textColor = MDColor.darkText.others
     placeholderLabel.textAlignment = textAlignment
     placeholderLabel.numberOfLines = 0
     placeholderLabel.backgroundColor = .clear

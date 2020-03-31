@@ -68,7 +68,7 @@ public struct Pulse {
   public var animation = PulseAnimation.pointWithBacking
   
   /// A UIColor.
-  public var color = Color.grey.base
+  public var color = MDColor.grey.base
   
   /// The opcaity value for the pulse animation.
   public var opacity: CGFloat = 0.18

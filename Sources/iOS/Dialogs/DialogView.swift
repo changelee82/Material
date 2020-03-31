@@ -217,7 +217,7 @@ private extension DialogView {
   /// Prepares titleArea.
   func prepareTitleArea() {
     addSubview(titleArea)
-    titleArea.dividerColor = Color.darkText.dividers
+    titleArea.dividerColor = MDColor.darkText.dividers
     titleArea.dividerThickness = 1
     titleArea.dividerAlignment = .bottom
   }
@@ -226,14 +226,14 @@ private extension DialogView {
   func prepareTitleLabel() {
     titleArea.addSubview(titleLabel)
     titleLabel.font = Theme.font.bold(with: 20)
-    titleLabel.textColor = Color.darkText.primary
+    titleLabel.textColor = MDColor.darkText.primary
     titleLabel.numberOfLines = 0
   }
   
   /// Prepares buttonArea.
   func prepareButtonArea() {
     addSubview(buttonArea)
-    buttonArea.dividerColor = Color.darkText.dividers
+    buttonArea.dividerColor = MDColor.darkText.dividers
     buttonArea.dividerThickness = 1
     buttonArea.dividerAlignment = .top
   }
@@ -264,7 +264,7 @@ private extension DialogView {
     contentArea.addSubview(detailsLabel)
     detailsLabel.font = Theme.font.regular(with: detailsLabel.fontSize)
     detailsLabel.numberOfLines = 0
-    detailsLabel.textColor = Color.darkText.secondary
+    detailsLabel.textColor = MDColor.darkText.secondary
   }
 }
 

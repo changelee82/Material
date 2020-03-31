@@ -130,7 +130,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
         return
       }
       
-      titleColor = Color.blue.base
+      titleColor = MDColor.blue.base
     }
   }
   
@@ -180,7 +180,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   public override init(frame: CGRect) {
     super.init(frame: frame)
     /// Set these here to avoid overriding storyboard values
-    tintColor = Color.blue.base
+    tintColor = MDColor.blue.base
     titleLabel?.font = Theme.font.regular(with: fontSize)
     prepare()
   }

@@ -112,7 +112,7 @@ open class TextField: UITextField, Themeable {
   
   /// Placeholder normal text
   @IBInspectable
-  open var leftViewNormalColor = Color.darkText.others {
+  open var leftViewNormalColor = MDColor.darkText.others {
     didSet {
       updateLeftViewColor()
     }
@@ -120,7 +120,7 @@ open class TextField: UITextField, Themeable {
   
   /// Placeholder active text
   @IBInspectable
-  open var leftViewActiveColor = Color.blue.base {
+  open var leftViewActiveColor = MDColor.blue.base {
     didSet {
       updateLeftViewColor()
     }
@@ -144,7 +144,7 @@ open class TextField: UITextField, Themeable {
   
   /// Divider normal color.
   @IBInspectable
-  open var dividerNormalColor = Color.grey.lighten2 {
+  open var dividerNormalColor = MDColor.grey.lighten2 {
     didSet {
       updateDividerColor()
     }
@@ -152,7 +152,7 @@ open class TextField: UITextField, Themeable {
   
   /// Divider active color.
   @IBInspectable
-  open var dividerActiveColor = Color.blue.base {
+  open var dividerActiveColor = MDColor.blue.base {
     didSet {
       updateDividerColor()
     }
@@ -195,7 +195,7 @@ open class TextField: UITextField, Themeable {
   
   /// Placeholder normal text
   @IBInspectable
-  open var placeholderNormalColor = Color.darkText.others {
+  open var placeholderNormalColor = MDColor.darkText.others {
     didSet {
       updatePlaceholderLabelColor()
     }
@@ -203,7 +203,7 @@ open class TextField: UITextField, Themeable {
   
   /// Placeholder active text
   @IBInspectable
-  open var placeholderActiveColor = Color.blue.base {
+  open var placeholderActiveColor = MDColor.blue.base {
     didSet {
       /// Keep tintColor update here. See #1229
       tintColor = placeholderActiveColor
@@ -245,7 +245,7 @@ open class TextField: UITextField, Themeable {
   
   /// Detail text
   @IBInspectable
-  open var detailColor = Color.darkText.others {
+  open var detailColor = MDColor.darkText.others {
     didSet {
       updateDetailLabelColor()
     }
@@ -451,7 +451,7 @@ open class TextField: UITextField, Themeable {
     backgroundColor = nil
     contentScaleFactor = Screen.scale
     font = Theme.font.regular(with: 16)
-    textColor = Color.darkText.primary
+    textColor = MDColor.darkText.primary
     
     prepareDivider()
     preparePlaceholderLabel()
@@ -489,7 +489,7 @@ fileprivate extension TextField {
   
   /// Prepares the placeholderLabel.
   func preparePlaceholderLabel() {
-    placeholderNormalColor = Color.darkText.others
+    placeholderNormalColor = MDColor.darkText.others
     placeholderLabel.backgroundColor = .clear
     addSubview(placeholderLabel)
   }
@@ -498,7 +498,7 @@ fileprivate extension TextField {
   func prepareDetailLabel() {
     detailLabel.font = Theme.font.regular(with: 12)
     detailLabel.numberOfLines = 0
-    detailColor = Color.darkText.others
+    detailColor = MDColor.darkText.others
     addSubview(detailLabel)
   }
   

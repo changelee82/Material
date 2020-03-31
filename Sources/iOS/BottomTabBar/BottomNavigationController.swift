@@ -291,7 +291,7 @@ private extension BottomNavigationController {
   func prepareTabBar() {
     tabBar.isTranslucent = false
     tabBar.heightPreset = .normal
-    tabBar.dividerColor = Color.grey.lighten2
+    tabBar.dividerColor = MDColor.grey.lighten2
     tabBar.dividerAlignment = .top
     
     let image = UIImage()

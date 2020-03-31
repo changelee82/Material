@@ -39,35 +39,35 @@ public protocol Themeable: class {
 
 public struct Theme: Hashable {
   /// The color displayed most frequently across the app.
-  public var primary = Color.blue.darken2
+  public var primary = MDColor.blue.darken2
   
   /// Accent color for some components such as FABMenu.
-  public var secondary = Color.blue.base
+  public var secondary = MDColor.blue.base
   
   /// Background color for view controllers and some components.
-  public var background = Color.white
+  public var background = MDColor.white
   
   /// Background color for components such as cards, and dialogs.
-  public var surface = Color.white
+  public var surface = MDColor.white
   
   /// Error color for components such as ErrorTextField.
-  public var error = Color.red.base
+  public var error = MDColor.red.base
   
   
   /// Text and iconography color to be used on primary color.
-  public var onPrimary = Color.white
+  public var onPrimary = MDColor.white
   
   /// Text and iconography color to be used on secondary color.
-  public var onSecondary = Color.white
+  public var onSecondary = MDColor.white
   
   /// Text and iconography color to be used on background color.
-  public var onBackground = Color.black
+  public var onBackground = MDColor.black
   
   /// Text and iconography color to be used on surface color.
-  public var onSurface = Color.black
+  public var onSurface = MDColor.black
   
   /// Text and iconography color to be used on error color.
-  public var onError = Color.white
+  public var onError = MDColor.white
   
   /// A boolean indicating if theming is enabled globally.
   public static var isEnabled = false
@@ -90,7 +90,7 @@ public extension Theme {
   static var dark: Theme = {
     var t = Theme()
     t.primary = UIColor(rgb: 0x202020)
-    t.secondary = Color.teal.base
+    t.secondary = MDColor.teal.base
     t.background = UIColor(rgb: 0x303030)
     t.surface = t.background
     t.onBackground = .white

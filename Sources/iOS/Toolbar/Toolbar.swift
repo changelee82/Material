@@ -180,7 +180,7 @@ private extension Toolbar {
     titleLabel.textAlignment = .center
     titleLabel.contentScaleFactor = Screen.scale
     titleLabel.font = Theme.font.medium(with: 17)
-    titleLabel.textColor = Color.darkText.primary
+    titleLabel.textColor = MDColor.darkText.primary
     titleLabelTextAlignmentObserver = titleLabel.observe(\.textAlignment) { [weak self] titleLabel, _ in
       self?.contentViewAlignment = .center == titleLabel.textAlignment ? .center : .full
     }
@@ -191,7 +191,7 @@ private extension Toolbar {
     detailLabel.textAlignment = .center
     detailLabel.contentScaleFactor = Screen.scale
     detailLabel.font = Theme.font.regular(with: 12)
-    detailLabel.textColor = Color.darkText.secondary
+    detailLabel.textColor = MDColor.darkText.secondary
   }
   
   func prepareIconButtons(_ views: [UIView]) {

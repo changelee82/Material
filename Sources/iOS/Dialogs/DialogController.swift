@@ -138,7 +138,7 @@ private extension DialogController {
   /// Prepares view.
   func prepareView() {
     let v = UIControl()
-    v.backgroundColor = Color.black.withAlphaComponent(0.33)
+    v.backgroundColor = MDColor.black.withAlphaComponent(0.33)
     v.addTarget(self, action: #selector(didTapBackgroundView), for: .touchUpInside)
     view = v
   }
